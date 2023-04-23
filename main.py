@@ -28,12 +28,12 @@ while True:
                     Sound.up()
                 else:
                     Sound.down()
+                print(credits)
 
             cv2.imshow('Pushup counter', img)
             if cv2.waitKey(10) & 0xFF == ord('q'):
                 break
 
-            print(credits)
             if credits >= 5:
                 if mouse is None:
                     mouse = Mouse.Mouse()
